@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Library_Management.Models.Admin>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-right">
+        <ul>
+               @Html.ActionLink("LogOut", "Index", "Admin_Login")
+
+        </ul>
+    </div>
+</div>
+<head>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-photo/education-day-assortment-with-copy-space_23-2148721275.jpg?size=626&ext=jpg&ga=GA1.1.1264597835.1649336709.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h2 {
+            color: white
+        }
+
+        label {
+            color: whitesmoke
+        }
+
+        h4 {
+            color: antiquewhite
+        }
+    </style>
+</head>
+<body>
+    <h2>
+
+        Hi Admin!!!
+    </h2>
+    <ul>
+        <li>@Html.ActionLink("Add Book", "Create", "Books")</li>
+        <li>@Html.ActionLink("Users List", "Index", "new_User")</li>
+        <li>@Html.ActionLink("Add Author", "Create", "Authors")</li>
+        <li>@Html.ActionLink("Orders List", "Index", "Order_Book")</li>
+        <li>@Html.ActionLink("ReturnBook", "Index", "ReturnBook")</li>
+
+        </ul>
+
+
+</body>
+
+                    
